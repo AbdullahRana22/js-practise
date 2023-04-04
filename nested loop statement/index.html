@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Es6 looping statement</h1>
+    <script>
+      
+      let matrix1 = [
+        [2,3,3],
+        [3,4,4],
+        [4,5,5]
+      ]
+       for (let i = 0; i < matrix1.length; i++) {
+
+        for (let j = 0; j < matrix1[i].length; j++) {
+            console.log(" sometext:" , matrix1[i][j]);
+            matrix1[i][j] = matrix1[i][j] * 2
+        }
+       }
+    
+       console.log("result:" , matrix1);
+
+
+    </script>
+</body>
+</html>
