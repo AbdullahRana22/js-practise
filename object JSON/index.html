@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object Json</h1>
+<script>
+    let key = "name"
+    let obj = {
+    roll: "38D",
+    subject: "science",
+    name: "john",
+    isActive: true,
+    electives: [
+        { name : "abc", teacher: "Alice", grade: "23"},
+        { name : "xyz",teacher: "rana"},
+        { name: "aaa"}
+    ],
+    bio: {
+        age: 23,
+        isSingle: true,
+        nat: "Pakistani" ,
+        religion: "Islam"
+    }
+    }
+console.log(obj.electives[0].teacher);
+console.log(obj.bio.age);
+console.log(obj.bio.isSingle);
+console.log(obj.bio.religion);
+
+console.log(obj[key]);
+console.log(obj.subject);
+console.log(obj["roll"]);
+console.log(obj["isActive"]);
+
+obj[key] = "rana"
+obj.subject = "computer science";
+
+console.log(obj);
+
+
+
+
+</script>
+    
+</body>
+</html>
